@@ -1,0 +1,16 @@
+python scripts/train.py \
+    --alg SAC \
+    --env Waypoint \
+    --env-wrapper High \
+    --low-level 5DofArm1/Waypoint_Sawyer5Arm1_L2Low_SAC_0 \
+    --time-limit 50 \
+    --skip 15 \
+    --timesteps 300000 \
+    --batch-size 128 \
+    --layers 72 72 \
+    --rand-init false \
+    --best true \
+    --goal-range-low -0.635 -0.635 -0.09 0.3 -0.35 -0.05 \
+    --goal-range-high 0.635 0.635 0.09 0.95 0.35 0.25 \
+    --delta-max 0.04 0.04 0.01 0.2 0.2 0.2 \
+    --xyz-skill true

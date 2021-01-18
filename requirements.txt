@@ -1,0 +1,10 @@
+gym[classic_control,robotics,mujoco]==0.17.1
+gast==0.2.2
+stable_baselines==2.10.1
+numpy<1.17
+mujoco-py<2.0
+matplotlib
+seaborn
+imageio
+cffi
+tensorflow==1.15
